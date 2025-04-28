@@ -3,18 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lyrics Finder</title>
+  <title>Lyrics Viewer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Find Song Lyrics</h1>
+    <div id="layout">
+        <h1>Lyrics Viewer</h1>
 
-  <form id="lyrics-form">
-    <input type="text" id="artist" placeholder="Artist Name" required>
-    <input type="text" id="song" placeholder="Song Name" required>
-    <button type="submit">Get Lyrics</button>
-  </form>
+    </div>
 
-  <div id="lyrics-result"></div>
+    <div id="main">
+        <form id="lyrics-form">
+            <input type="text" id="artist" placeholder="Artist Name" required>
+            <input type="text" id="song" placeholder="Song Name" required>
+            <button type="submit">Get Lyrics</button>
+        </form>
+    </div>
+  <div id="lyrics-result">
+    <h2>...Lyrics...</h2>
+  </div>
 
   <script src="script.js"></script>
 </body>

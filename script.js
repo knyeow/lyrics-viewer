@@ -1,5 +1,5 @@
 document.getElementById('lyrics-form').addEventListener('submit', async function (e) {
-    e.preventDefault(); // Formun reload yapmasını engelle
+    e.preventDefault(); 
   
     const artist = document.getElementById('artist').value.trim();
     const song = document.getElementById('song').value.trim();
@@ -24,4 +24,4 @@ document.getElementById('lyrics-form').addEventListener('submit', async function
       lyricsResult.innerHTML = `<p>Something went wrong. Please try again later.</p>`;
     }
   });
-  
+
